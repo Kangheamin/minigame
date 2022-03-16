@@ -117,6 +117,8 @@ replay.addEventListener('click',()=>{
     scoreTo();
     intitGame(); 
     audio.play();
+    gamebtn.classList.remove('hidden')
+    field.classList.remove('clickben')
 });
 
 //스코어//
@@ -139,6 +141,7 @@ function onFieldClick(event) {
             message.innerHTML = 'You Win'
             audio.pause();
             win.play();
+            gamebtn.classList.add('hidden')
         }
     }
     if (target.matches('.bug')){
@@ -148,6 +151,8 @@ function onFieldClick(event) {
         popup.classList.remove("hide")
         message.innerHTML = 'lost'
         audio.pause();
+        gamebtn.classList.add('hidden')
+        field.classList.add('clickben')
     }
 }
 

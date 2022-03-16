@@ -3,6 +3,9 @@ button {
   outline: none;
   cursor: pointer;
 }
+.hidden {
+  visibility: hidden;
+}
 body {
   margin: 0 auto;
   text-align: center;
@@ -128,4 +131,8 @@ body {
 
 .bug:hover {
   transform: scale(1.1);
+}
+
+.clickben {
+  pointer-events: none;
 }
