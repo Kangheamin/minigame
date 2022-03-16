@@ -1,0 +1,131 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+body {
+  text-align: center;
+}
+.game {
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  background: url(img/background.png) center/cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.girl img {
+  position: absolute;
+  width: 50px;
+  left: 270px;
+  top: 100px;
+}
+
+.game_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.game_button {
+  width: 60px;
+  height: 60px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+}
+
+.game_button:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in;
+}
+.game_timer {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 32px;
+  margin-top: 8px;
+}
+.game_score {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 46px;
+  background-color: rgba(184, 113, 113, 0.5);
+  color: rgb(126, 75, 75);
+  border-radius: 50%;
+}
+.game_field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.pop-up {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 400px;
+  height: 140px;
+  padding: 20px;
+  background-color: #00000090;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transform: translateY(-150%);
+}
+
+.hide {
+  display: none;
+}
+
+.pop-up_refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.pop-up_message {
+  display: block;
+  font-size: 38px;
+}
+
+.bug {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 40px;
+}
+
+.bug2 {
+  width: 50px;
+}
+
+.none {
+  display: none;
+}
+
+.carrot {
+  transition: all 300ms ease-in;
+}
+.carrot:hover {
+  transform: translateY(-10px);
+  opacity: 0.5;
+}
+
+.bug:hover {
+  transform: scale(1.1);
+}
+
+  
