@@ -41,6 +41,7 @@ function addItem(className, count, imgPath) {
         item.style.left = `${x}px`;
         item.style.top = `${y}px`;
         field.appendChild(item);
+        
     };
 }
 
@@ -59,6 +60,7 @@ let mytimer; //타이머 변수
 
 function startTimer() {
     if(timerstop) {
+
         let time = 10;
         let min = ""; //분
         let sec = ""; //초
@@ -69,6 +71,7 @@ function startTimer() {
             
             tamer.innerHTML =  `${min} : ${sec}`;
             time--;
+            gamebtn.classList.remove('hidden')
             if(time < 0 ){
                 stop();
                 count = CARROTCOUNT;
@@ -76,6 +79,8 @@ function startTimer() {
                 message.innerHTML = 'Time Over'
                 audio.pause();
                 timeover.play();
+                gamebtn.classList.add('hidden');
+                field.classList.add('clickben');
             }
     },1000);timerstop = false;}
 };
@@ -142,6 +147,8 @@ function onFieldClick(event) {
             audio.pause();
             win.play();
             gamebtn.classList.add('hidden')
+            field.classList.add('clickben')
+            
         }
     }
     if (target.matches('.bug')){
